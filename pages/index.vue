@@ -5,7 +5,13 @@
 </template>
 
 <script>
-export default {}
+export default {
+  head() {
+    return {
+      title: 'List of events and homepage'
+    }
+  }
+}
 </script>
 
 <style></style>

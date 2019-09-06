@@ -11,6 +11,18 @@ import navBar from '../components/navBar'
 export default {
   components: {
     navBar
+  },
+  head() {
+    return {
+      titleTemplate: '%s - Real world nuxt Nico app',
+      meta: [
+        {
+          hid: 'description',
+          description: 'description',
+          content: "That's a site for events !"
+        }
+      ]
+    }
   }
 }
 </script>
