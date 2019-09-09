@@ -1,7 +1,7 @@
 import axios from 'axios' // ?
 
 const apiClient = axios.create({
-  baseURL: `http://localhost:3030`,
+  baseURL: `http://my-json-server.typicode.com/barein/Nuxt/`,
   withCredentials: false,
   headers: {
     Accept: 'application/json',
@@ -11,9 +11,9 @@ const apiClient = axios.create({
 
 export default {
   getEvents() {
-    return apiClient.get('http://localhost:3030/events')
+    return apiClient.get('events')
   },
   getEvent(id) {
-    return apiClient.get('http://localhost:3030/events/' + id)
+    return apiClient.get('events/' + id)
   }
 }
